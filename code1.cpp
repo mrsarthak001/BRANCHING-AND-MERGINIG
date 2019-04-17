@@ -34,4 +34,77 @@ int main()
 		      			cout << "Wrong choice opted\n"; 
 					goto next; 
 		   		}
-		
+		//inside specific ride  
+			switch(ride)
+			{
+				case 1:
+					cout<<"\n<<<<<<<<<<<<<<<<<<<<Adult Ride and Slides>>>>>>>>>>>>>>>>>>>>\n";
+					
+			//next:
+			cout<< "Only for Adult\n RIDE***\n\t1. Aqua Dive\t\t   \n\t2. Dragon Jet\t\t \n\t3. Dragon Jet\t\t \n\t4. Bull fight \t\t  \n\t5. Swing it\t\t  \n\t6. Gaming Adventure Zone\t\t\n\t7. Cricket zone\t\t   \n\t8. Parachute Tower\t\t  \n\t9. Swing Chair\t\t  \n SLIDES***\n\t10.Wildwood Jungle Zone\t\t    \n\t11. Gorilla Slide\t\t  \n\t12. Elephant Slide\t\t  \n\t13. Dragon Slide\t\t   \n\t14. Family Pirates\t\t  \n\t15. Pirate Pool\t\t   \nENTER YOUR CHOICE:";
+				for(i=0;i<15;++i)
+				{
+					cin>>adult;
+
+					try
+					{ 
+		      				if (adult != 1 && adult != 2 && adult != 3 && adult != 4 && adult != 5 && adult != 6 && adult != 7 && 	adult != 8 && adult != 9 && adult != 10 && adult != 11 && adult != 12 && adult != 13 && adult != 14 && adult != 15) 
+		   	   			{ 
+		   		     			throw adult;  
+		   	   			} 
+		   			} 
+		   			catch (int adult) 
+					{ 
+		   	   			cout << "Wrong choice opted\n"; 
+						//goto next; 
+		   			}
+
+					switch (adult)
+					{
+				
+					case 1:
+						price = price + 50;break;
+					case 2:
+						price = price + 80;break;
+					case 3:
+						price = price + 70;break;
+					case 4:
+						price = price + 50;break;
+					case 5:
+						price = price + 40;break;
+					case 6:
+						price = price + 80;break;
+					case 7:
+						price = price + 50;break;
+					case 8:
+						price = price + 70;break;
+					case 9:
+						price = price + 80;break;
+					case 10:
+						price = price + 20;break;
+					case 11:
+						price = price + 30;break;
+					case 12:
+						price = price + 50;break;
+					case 13:
+						price = price + 60;break;
+					case 14:
+						price = price + 40;break;
+					case 15:
+						price = price + 30;break;
+					}
+					cout<<"\n\nPrice is-"<<price<<endl;
+					
+	
+					if(opt2 == 1)
+					{
+						continue;
+						cout<<"Enter Your Choice";
+					}
+				
+					else 
+						break;
+
+				}	
+					break;
+	

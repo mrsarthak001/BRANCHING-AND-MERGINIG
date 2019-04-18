@@ -179,3 +179,93 @@ int main()
 			break;
 				
 >>>>>>> dev2
+
+case 3:
+					cout<<"\n<<<<<<<<<<<<<<<<<<<<Family Ride and Slides>>>>>>>>>>>>>>>>>>>>\n";
+					//next:
+				cout<<"Family\n RIDE***\n\t1. Family Picnic Zone\t\t   \n\t2. Striking Car\t\t \n\t3. Sky Train\t\t \n\t4. Boating \t\t  \n\t5. 5D RideI\t\t  \n\t6. 5D Movie\t\t\n\t7. Mini Twister\t\t   \n\t8. Tsunami\t\t  \n\t9. Swing Chair\t\t  \n SLIDES***\n\t10.Water Play Zone Zone\t\t    \n\t11. Water Slide\t\t  \n\t12. Fountain Dance\t\t  \n\t13. Wave pool\t\t   \n\t14. Multi Slide Tower\t\t  \n\t15. Pirate Pool\t\t   \nENTER YOUR CHOICE:";
+				for(i=0;i<15;++i)
+				{
+					cin>>family;
+
+					try
+					{
+      						if (family != 1 && family != 2 && family != 3 && family != 4 && family != 5 && family != 6 && family != 7 && family != 8 && family != 9 && family != 10 && family != 11 && family != 12 && family != 13 && family != 14 && family != 15)
+   	   					{
+   				     			throw family;
+   	   					}
+   					}
+   					catch (int family)
+					{
+   	   					cout << "Wrong choice opted\n";
+						//goto next;
+   					}
+
+					switch (family)
+					{
+
+					case 1:
+						price = price + 70;break;
+					case 2:
+						price = price + 80;break;
+					case 3:
+						price = price + 80;break;
+					case 4:
+						price = price + 90;break;
+					case 5:
+						price = price + 50;break;
+					case 6:
+						price = price + 60;break;
+					case 7:
+						price = price + 50;break;
+					case 8:
+						price = price + 80;break;
+					case 9:
+						price = price + 50;break;
+					case 10:
+						price = price + 30;break;
+					case 11:
+						price = price + 20;break;
+					case 12:
+						price = price + 50;break;
+					case 13:
+						price = price + 30;break;
+					case 14:
+						price = price + 70;break;
+					case 15:
+						price = price + 90;break;
+					}
+					cout<<"\n\nPrice is- "<<price<<endl;
+
+
+
+					if(opt4 == 1)
+					{
+						continue;
+						cout<<"Enter Your Choice";
+					}
+
+					else
+						break;
+				}
+
+					break;
+				default:
+					cout<<"Wrong option\n";
+					break;
+			}
+
+			//asking users for other ride options
+			cout<<"Do you want to try other rides also?\tClick 1 to continue:";
+			cin>>opt1;
+
+			if(opt1 == 1)
+				continue;
+
+			else
+				break;
+
+		}
+	return 0;
+}
+
